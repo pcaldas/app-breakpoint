@@ -13,6 +13,8 @@
 		2D86C39B208EA99100A2C48E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D86C399208EA99100A2C48E /* Main.storyboard */; };
 		2D86C39D208EA9B800A2C48E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D86C39C208EA9B800A2C48E /* Assets.xcassets */; };
 		2D86C3A0208EA9B800A2C48E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D86C39E208EA9B800A2C48E /* LaunchScreen.storyboard */; };
+		2D86C3AD208EAF7100A2C48E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D86C3AC208EAF7100A2C48E /* GoogleService-Info.plist */; };
+		F8DC8694B8329ACC6ADC1158 /* Pods_Breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F9BE881731F6623B9C31E4 /* Pods_Breakpoint.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		2D86C39C208EA9B800A2C48E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D86C39F208EA9B800A2C48E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D86C3A1208EA9B800A2C48E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D86C3AC208EAF7100A2C48E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		508A24466DAB0BA29828FFE5 /* Pods-Breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint.release.xcconfig"; sourceTree = "<group>"; };
+		75F9BE881731F6623B9C31E4 /* Pods_Breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9710B911B9B4273867501835 /* Pods-Breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8DC8694B8329ACC6ADC1158 /* Pods_Breakpoint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2110F189169CF05517D8F208 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75F9BE881731F6623B9C31E4 /* Pods_Breakpoint.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2796403EE08E3EF29E36325A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9710B911B9B4273867501835 /* Pods-Breakpoint.debug.xcconfig */,
+				508A24466DAB0BA29828FFE5 /* Pods-Breakpoint.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2D86C387208EA99000A2C48E = {
 			isa = PBXGroup;
 			children = (
 				2D86C392208EA99100A2C48E /* Breakpoint */,
 				2D86C391208EA99100A2C48E /* Products */,
+				2796403EE08E3EF29E36325A /* Pods */,
+				2110F189169CF05517D8F208 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +92,7 @@
 				2D86C39C208EA9B800A2C48E /* Assets.xcassets */,
 				2D86C39E208EA9B800A2C48E /* LaunchScreen.storyboard */,
 				2D86C3A1208EA9B800A2C48E /* Info.plist */,
+				2D86C3AC208EAF7100A2C48E /* GoogleService-Info.plist */,
 			);
 			path = Breakpoint;
 			sourceTree = "<group>";
@@ -114,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D86C3A4208EA9B800A2C48E /* Build configuration list for PBXNativeTarget "Breakpoint" */;
 			buildPhases = (
+				09BC887EAD7CFAA115206230 /* [CP] Check Pods Manifest.lock */,
 				2D86C38C208EA99100A2C48E /* Sources */,
 				2D86C38D208EA99100A2C48E /* Frameworks */,
 				2D86C38E208EA99100A2C48E /* Resources */,
+				D339A12D16551CB92EBE2300 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,12 +195,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D86C3A0208EA9B800A2C48E /* LaunchScreen.storyboard in Resources */,
+				2D86C3AD208EAF7100A2C48E /* GoogleService-Info.plist in Resources */,
 				2D86C39D208EA9B800A2C48E /* Assets.xcassets in Resources */,
 				2D86C39B208EA99100A2C48E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09BC887EAD7CFAA115206230 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Breakpoint-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D339A12D16551CB92EBE2300 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D86C38C208EA99100A2C48E /* Sources */ = {
@@ -322,15 +397,13 @@
 		};
 		2D86C3A5208EA9B800A2C48E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9710B911B9B4273867501835 /* Pods-Breakpoint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59AXZG8J3E;
 				INFOPLIST_FILE = Breakpoint/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pmc.Breakpoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -340,15 +413,13 @@
 		};
 		2D86C3A6208EA9B800A2C48E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508A24466DAB0BA29828FFE5 /* Pods-Breakpoint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59AXZG8J3E;
 				INFOPLIST_FILE = Breakpoint/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pmc.Breakpoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
