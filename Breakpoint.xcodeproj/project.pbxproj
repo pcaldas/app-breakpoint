@@ -21,6 +21,9 @@
 		2DE79CD2208FF79F0000A461 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE79CD1208FF79F0000A461 /* ShadowView.swift */; };
 		2DE79CD4208FFA280000A461 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE79CD3208FFA280000A461 /* AuthService.swift */; };
 		2DE79CD62090288E0000A461 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE79CD52090288E0000A461 /* MeVC.swift */; };
+		2DE79CD820902FA90000A461 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE79CD720902FA90000A461 /* CreatePostVC.swift */; };
+		2DE79CDA209033CC0000A461 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE79CD9209033CC0000A461 /* UIViewExt.swift */; };
+		2DE79CDC20903A3D0000A461 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE79CDB20903A3D0000A461 /* FeedCell.swift */; };
 		F8DC8694B8329ACC6ADC1158 /* Pods_Breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F9BE881731F6623B9C31E4 /* Pods_Breakpoint.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,9 @@
 		2DE79CD1208FF79F0000A461 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		2DE79CD3208FFA280000A461 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2DE79CD52090288E0000A461 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		2DE79CD720902FA90000A461 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
+		2DE79CD9209033CC0000A461 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		2DE79CDB20903A3D0000A461 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		508A24466DAB0BA29828FFE5 /* Pods-Breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint.release.xcconfig"; sourceTree = "<group>"; };
 		75F9BE881731F6623B9C31E4 /* Pods_Breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9710B911B9B4273867501835 /* Pods-Breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakpoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Breakpoint/Pods-Breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 				2DE79CCB208FEF230000A461 /* AuthVC.swift */,
 				2DE79CCD208FEF670000A461 /* LoginVC.swift */,
 				2DE79CD52090288E0000A461 /* MeVC.swift */,
+				2DE79CD720902FA90000A461 /* CreatePostVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +135,7 @@
 			children = (
 				2DE79CCF208FEFDE0000A461 /* InsetTextField.swift */,
 				2DE79CD1208FF79F0000A461 /* ShadowView.swift */,
+				2DE79CDB20903A3D0000A461 /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +150,7 @@
 		2D86C3AA208EAC0100A2C48E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2DE79CD9209033CC0000A461 /* UIViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -274,6 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DE79CDA209033CC0000A461 /* UIViewExt.swift in Sources */,
+				2DE79CDC20903A3D0000A461 /* FeedCell.swift in Sources */,
 				2DE79CD62090288E0000A461 /* MeVC.swift in Sources */,
 				2DE79CCC208FEF230000A461 /* AuthVC.swift in Sources */,
 				2D86C398208EA99100A2C48E /* GroupsVC.swift in Sources */,
@@ -281,6 +292,7 @@
 				2DE79CD4208FFA280000A461 /* AuthService.swift in Sources */,
 				2D86C394208EA99100A2C48E /* AppDelegate.swift in Sources */,
 				2DE79CD2208FF79F0000A461 /* ShadowView.swift in Sources */,
+				2DE79CD820902FA90000A461 /* CreatePostVC.swift in Sources */,
 				2D86C396208EA99100A2C48E /* FeedVC.swift in Sources */,
 				2DE79CD0208FEFDE0000A461 /* InsetTextField.swift in Sources */,
 				2D86C3AF208EB64100A2C48E /* DataService.swift in Sources */,
