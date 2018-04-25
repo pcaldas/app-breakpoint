@@ -419,7 +419,7 @@
                         <viewLayoutGuide key="safeArea" id="pHT-On-HfE"/>
                     </view>
                     <connections>
-                        <outlet property="emailLbl" destination="vJ6-cl-naM" id="x1y-ca-nWb"/>
+                        <outlet property="emailLbl" destination="PWf-Av-9FJ" id="fWO-Rz-rfn"/>
                         <outlet property="profileImage" destination="zR2-JY-GII" id="pfo-8e-oyN"/>
                         <outlet property="sendBtn" destination="uSW-Uk-3ld" id="dsg-GE-z6s"/>
                         <outlet property="textView" destination="47w-pS-eia" id="d5O-QU-IGY"/>
