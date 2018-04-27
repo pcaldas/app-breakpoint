@@ -160,6 +160,9 @@
                                             <constraint firstAttribute="width" constant="30" id="g6Z-nq-zId"/>
                                         </constraints>
                                         <state key="normal" image="addNewIcon"/>
+                                        <connections>
+                                            <action selector="addGroupBtnWasPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="mYE-rS-V5F"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -249,7 +252,7 @@
         <!--Group FeedVC-->
         <scene sceneID="xBl-nq-pYU">
             <objects>
-                <viewController id="WGS-ip-6Kc" customClass="GroupFeedVC" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupFeedVC" id="WGS-ip-6Kc" customClass="GroupFeedVC" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V8a-BJ-FA1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -346,7 +349,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="wOW-XT-ywS">
-                                <rect key="frame" x="0.0" y="78" width="375" height="16.5"/>
+                                <rect key="frame" x="15" y="78" width="345" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                 <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -390,7 +393,7 @@
                         <constraints>
                             <constraint firstItem="bx0-KR-VsO" firstAttribute="leading" secondItem="nmS-sT-WxF" secondAttribute="leading" id="2hI-6V-P1I"/>
                             <constraint firstItem="wOW-XT-ywS" firstAttribute="top" secondItem="9uL-Ax-iTq" secondAttribute="bottom" constant="8" id="7eF-8t-54T"/>
-                            <constraint firstItem="nmS-sT-WxF" firstAttribute="trailing" secondItem="wOW-XT-ywS" secondAttribute="trailing" id="9qd-wB-QPo"/>
+                            <constraint firstItem="nmS-sT-WxF" firstAttribute="trailing" secondItem="wOW-XT-ywS" secondAttribute="trailing" constant="15" id="9qd-wB-QPo"/>
                             <constraint firstItem="c7u-6f-tqB" firstAttribute="leading" secondItem="nmS-sT-WxF" secondAttribute="leading" id="GKb-ML-HjK"/>
                             <constraint firstItem="c7u-6f-tqB" firstAttribute="bottom" secondItem="nmS-sT-WxF" secondAttribute="bottom" id="IlR-82-JIJ"/>
                             <constraint firstAttribute="bottom" secondItem="bx0-KR-VsO" secondAttribute="bottom" id="Nb1-nE-WP8"/>
@@ -399,7 +402,7 @@
                             <constraint firstItem="bx0-KR-VsO" firstAttribute="trailing" secondItem="nmS-sT-WxF" secondAttribute="trailing" id="fdJ-rn-VZz"/>
                             <constraint firstItem="c7u-6f-tqB" firstAttribute="top" secondItem="wOW-XT-ywS" secondAttribute="bottom" constant="8" id="gbZ-gw-e69"/>
                             <constraint firstItem="9uL-Ax-iTq" firstAttribute="top" secondItem="V8a-BJ-FA1" secondAttribute="top" id="kie-xG-VrS"/>
-                            <constraint firstItem="wOW-XT-ywS" firstAttribute="leading" secondItem="nmS-sT-WxF" secondAttribute="leading" id="pVf-Ae-AcD"/>
+                            <constraint firstItem="wOW-XT-ywS" firstAttribute="leading" secondItem="nmS-sT-WxF" secondAttribute="leading" constant="15" id="pVf-Ae-AcD"/>
                             <constraint firstItem="c7u-6f-tqB" firstAttribute="trailing" secondItem="nmS-sT-WxF" secondAttribute="trailing" id="syz-Kj-dGK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nmS-sT-WxF"/>
@@ -420,7 +423,7 @@
         <!--Create GroupsVC-->
         <scene sceneID="xQX-zh-ZsB">
             <objects>
-                <viewController id="1FS-jU-5ps" customClass="CreateGroupsVC" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateGroupsVC" id="1FS-jU-5ps" customClass="CreateGroupsVC" customModule="Breakpoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1lJ-7e-WcL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

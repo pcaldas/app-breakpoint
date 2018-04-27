@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "FeedVC.tableView(_:cellForRowAt:):FeedVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "message">
+            </PersistentString>
+            <PersistentString
+               value = "messageArray[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DataService.getUsername(forUID:handler:):DataService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "REF_USERS.observeSingleEvent(of: .value)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

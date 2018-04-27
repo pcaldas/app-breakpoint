@@ -25,6 +25,7 @@ class CreateGroupsVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        //emailSearchTextField.bindToKeyboard()
         emailSearchTextField.delegate = self
         emailSearchTextField.addTarget(self, action: #selector(CreateGroupsVC.textFieldDidChange), for: .editingChanged)
     }

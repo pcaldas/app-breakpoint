@@ -30,6 +30,11 @@ class GroupsVC: UIViewController {
             }
         }
     }
+    
+    @IBAction func addGroupBtnWasPressed(_ sender: Any) {
+        guard let createGroupsVC = storyboard?.instantiateViewController(withIdentifier: "CreateGroupsVC") as? CreateGroupsVC else { return }
+        present(createGroupsVC, animated: true, completion: nil)
+    }
 }
 
 
@@ -49,5 +54,14 @@ extension GroupsVC: UITableViewDelegate, UITableViewDataSource {
         cell.configureCell(title: group.groupTitle, description: group.groupDesc, memberCount: group.memberCount)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let groupFeedVC = storyboard?.instantiateViewController(withIdentifier: "GroupFeedVC") as? GroupFeedVC else { return }
+        groupFeedVC.initData(forGroup: groupsArray[indexPath.row])
+        present(groupFeedVC, animated: true, completion: nil)
+    }
 }
+
+
+
 

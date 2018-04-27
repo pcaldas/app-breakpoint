@@ -22,7 +22,7 @@ class LoginVC: UIViewController {
     
     @IBAction func signInBtnWasPressed(_ sender: Any) {
         if emailField.text != nil && passwordField.text != nil {
-            AuthService.instance.loginUser(withEmail: emailField.text!, andPassword: passwordField.text!) { (success, loginError) in
+            AuthService.instance.loginUser(withEmail: emailField.text!, andPassword: passwordField.text!, loginComplete: { (success, loginError) in
                 if success {
                     self.dismiss(animated: true, completion: nil)
                 } else {
@@ -33,20 +33,19 @@ class LoginVC: UIViewController {
                     if success {
                         AuthService.instance.loginUser(withEmail: self.emailField.text!, andPassword: self.passwordField.text!, loginComplete: { (success, nil) in
                             self.dismiss(animated: true, completion: nil)
+                            print("Successfully registered user")
                         })
                     } else {
                         print(String(describing: registrationError?.localizedDescription))
                     }
                 })
-            }
+            })
         }
     }
     
-
     @IBAction func closeBtnWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
 }
 
-extension LoginVC: UITextFieldDelegate {
-}
+extension LoginVC: UITextFieldDelegate { }

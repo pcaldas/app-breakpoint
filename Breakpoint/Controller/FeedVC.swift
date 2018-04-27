@@ -20,7 +20,7 @@ class FeedVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         DataService.instance.getAllFeedMessages { (returnedMessagesArray) in
@@ -28,6 +28,7 @@ class FeedVC: UIViewController {
             self.tableView.reloadData()
         }
     }
+    
 }
 
 extension FeedVC: UITableViewDelegate, UITableViewDataSource {
