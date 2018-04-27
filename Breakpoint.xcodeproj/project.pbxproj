@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D3BD0DF2090BC4D00D1CBDA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3BD0DE2090BC4D00D1CBDA /* Message.swift */; };
+		2D4D3C1920939D7500DDCAB9 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4D3C1820939D7500DDCAB9 /* UIViewControllerExt.swift */; };
 		2D86C394208EA99100A2C48E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86C393208EA99100A2C48E /* AppDelegate.swift */; };
 		2D86C396208EA99100A2C48E /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86C395208EA99100A2C48E /* FeedVC.swift */; };
 		2D86C398208EA99100A2C48E /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D86C397208EA99100A2C48E /* GroupsVC.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		2D3BD0DE2090BC4D00D1CBDA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2D4D3C1820939D7500DDCAB9 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		2D86C390208EA99100A2C48E /* Breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D86C393208EA99100A2C48E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D86C395208EA99100A2C48E /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				2DE79CD9209033CC0000A461 /* UIViewExt.swift */,
+				2D4D3C1820939D7500DDCAB9 /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				2DE79CD62090288E0000A461 /* MeVC.swift in Sources */,
 				2DE41B3C20923D3400657367 /* GroupCell.swift in Sources */,
 				2DE79CCC208FEF230000A461 /* AuthVC.swift in Sources */,
+				2D4D3C1920939D7500DDCAB9 /* UIViewControllerExt.swift in Sources */,
 				2D86C398208EA99100A2C48E /* GroupsVC.swift in Sources */,
 				2DE41B4220929A0500657367 /* GroupFeedVC.swift in Sources */,
 				2DE41B402092997A00657367 /* GroupFeedCell.swift in Sources */,
